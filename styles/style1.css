@@ -1,0 +1,68 @@
+/*
+.body-background1 {
+    position: absolute;
+    left:0%;
+
+    width: 30%;
+    height: 200px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: black;
+}
+*/
+
+.gear-box{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+
+.gear1 {
+    position: absolute;
+
+    top: 0%;
+
+    width: 150px;
+    height: 150px;
+    
+    animation: gear-rotate1 20s infinite linear;
+}
+.gear2 {
+    position: absolute;
+    right: 235px;
+    bottom: 71px;
+
+    width: 125px;
+    height: 125px;
+    
+    animation: gear-rotate2 20s infinite linear;
+}
+@keyframes gear-rotate1{
+    0%{
+        transform: rotate(0deg);
+    }
+    47%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(165deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes gear-rotate2{
+    0%{
+        transform: rotate(0deg);
+    }
+    47%{
+        transform: rotate(-180deg);
+    }
+    50%{
+        transform: rotate(-165deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
