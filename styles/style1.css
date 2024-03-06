@@ -1,15 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    background-image: url("images/seamless-moss-wall.jpg");
+    background-repeat: repeat;
 }
-.gear-box{
+.panneaux{
+    position: absolute;
+
+    top: 0%;
+
+    width: 100px;
+    height: 100px;
+}
+.gear-box1{
     position: absolute;
     width: 300px;
     height: 300px;
     transition: 1s ease-out;
 }
-
 .gear1 {
     position: absolute;
 
