@@ -1,54 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
 body {
-    background-image: url("images/seamless-moss-wall.jpg");
+    background-image: url("images/882.jpg");
+    background-size: 400px;
     background-repeat: repeat;
 }
-.panneaux{
+.topwall{
+    background-image: url("images/wallthing_scaled.png");
+    background-size: 100%;
     position: absolute;
-
+    
+    left: 0px;
     top: 0%;
 
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 20%;
 }
-.gear-box1{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    transition: 1s ease-out;
+.panneau{
+    border-radius: 20%;
+    background: #535614;
+    width: 25%;
+    height: 70%;
 }
-.gear1 {
-    position: absolute;
 
-    top: 0%;
+.contenu{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background-color: #057e0760;
+}
 
-    width: 150px;
-    height: 150px;
-    
-    animation: gear-rotate1 20s infinite linear;
+.left-container{
+    left: 0%;
 }
-.gear2 {
-    position: absolute;
-    right: 235px;
-    bottom: 71px;
+.right-container{
+    left: 50%;
+}
 
-    width: 125px;
-    height: 125px;
-    
-    animation: gear-rotate2 20s infinite linear;
-}
-@keyframes gear-rotate1{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-@keyframes gear-rotate2{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(-360deg);
-    }
+.text-box{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size:15px;
 }
