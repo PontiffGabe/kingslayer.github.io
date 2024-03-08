@@ -5,21 +5,24 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("images/882.jpg");
-    background-size: 2000px;
+    background: rgb(71, 97, 79);
+    background-blend-mode: darken;
+    background-size: 4000px;
     background-repeat: repeat;
 }
-
+  
 .topwall{
-    background-image: url("images/wallthing_scaled.png");
-    background-size: 200%;
-    position: absolute;
+    background: rgb(0, 0, 0);
+    background-blend-mode: darken;
+    background-size: 100%;
+    position: relative;
+    box-shadow: 5px 5px 30px 20px;
     
     left: 0px;
-    top: 0%;
+    top: 100%;
 
     width: 100%;
-    height: 20%;
+    height: 100px;
 
     display: flex;
     align-items: center;
@@ -71,8 +74,17 @@ a:visited { color: rgba(255, 255, 255, 0.623); }
 .contenu{
     padding: 10px 50px;
     position: relative;
+    height: 20vh;
     width: 50%;
     background-color: #057e0760;
+}
+.text-box{
+    top: 50px;
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size:15px;
 }
 
 .left-container{
@@ -82,10 +94,26 @@ a:visited { color: rgba(255, 255, 255, 0.623); }
     left: 50%;
 }
 
-.text-box{
-    padding: 20px 30px;
-    background: #fff;
-    position: relative;
-    border-radius: 6px;
-    font-size:15px;
+
+.section1{
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.section2{
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
 }
