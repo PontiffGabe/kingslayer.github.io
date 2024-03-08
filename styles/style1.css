@@ -6,12 +6,13 @@
 }
 body {
     background-image: url("images/882.jpg");
-    background-size: 400px;
+    background-size: 2000px;
     background-repeat: repeat;
 }
+
 .topwall{
     background-image: url("images/wallthing_scaled.png");
-    background-size: 100%;
+    background-size: 200%;
     position: absolute;
     
     left: 0px;
@@ -19,7 +20,47 @@ body {
 
     width: 100%;
     height: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+a{
+    color: rgba(255, 255, 255, 0.623);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+a:visited { color: rgba(255, 255, 255, 0.623); }
+
+.topbutton{
+    position: relative;
+    padding: 15px 5px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    transition: ease-in-out 0.3s;
+    
+}
+.topbutton::after{
+    transform: scale(0,1);
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.623);
+    height: 2px;
+    width: 100%;
+    left: 0%;
+    bottom: 15%;
+    transition: ease-in-out 0.3s;
+}
+.topbutton:hover{
+    color: rgb(255, 255, 255);
+}
+.topbutton:hover::after{
+    transform: scale(1,1);
+    background: rgb(255, 255, 255);
+}
+
 .panneau{
     border-radius: 20%;
     background: #535614;
