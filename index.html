@@ -2,23 +2,54 @@
 <html lang="fr">
 <head>
     <link rel="stylesheet" href="styles/style1.css">
-    <title>Helios Studios</title>
-    <script defer src="JS_stuff/scroll_handler.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />    <title>Main-page</title>
 </head>
 
 <body>
-    <div class="topwall">
-        <a class="topbutton" href="Téléchargement.html">Téléchargement</a>
-        <a class="topbutton" href="chronologie.html">Chronologie</a>
-        <a class="topbutton" href="A_propos.html">À propos</a>
-    </div>
+    <main>
+        <section class="container">
+            <div class="title">
+                <h2 style="text-align: center;">our reviews</h2>
+                <div class="underline"></div>
+            </div>
+            <article class="review" >
+                <div class="img-container">
+                    <img src="./img/pp.png" width="100px" height="100px" id="person-img" alt="">
+                </div>
+                <div class="info-container">
+                    <div id="author">sarah jones</div>
+                    <p id="job">ux designer</p>
+                    <p id="info">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae aperiam incidunt esse!
+                    </p>
+                </div>
+                <div class="button-container">
+                
+                    <button class="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                        <button class="random-btn">surprise me</button>
+        
+                    <button class="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
 
+            </article>
     
-
+        </section>
+            
+    </main>
 
 </body>
 
 <footer>
 
 </footer>
+
+<script defer src="app.js"></script>
 </html>
