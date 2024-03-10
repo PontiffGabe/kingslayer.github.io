@@ -21,28 +21,56 @@ hiddenElements.forEach((elt) => observer.observe(elt));
 
 
 
-const wrapper = document.querySelector(".wrapper");
-header = wrapper.querySelector("header");
+const wrapper1 = document.querySelector(".wrapper1");
+header1 = wrapper1.querySelector("header");
 
 function onDrag({movementX, movementY})
 {
-    let getStyle = window.getComputedStyle(wrapper);
+    let getStyle = window.getComputedStyle(wrapper1);
 
     let left = parseInt(getStyle.left); 
     let top = parseInt(getStyle.top);
 
-    wrapper.style.left = `${left + movementX}px` 
-    wrapper.style.top = `${top + movementY}px`
+    wrapper1.style.left = `${left + movementX}px` 
+    wrapper1.style.top = `${top + movementY}px`
 }
 
-header.addEventListener("mousedown", () => {
-    header.addEventListener("mousemove", onDrag);
+header1.addEventListener("mousedown", () => {
+    header1.addEventListener("mousemove", onDrag);
 });
 
-header.addEventListener("mouseup", () => {
-    header.removeEventListener("mousemove", onDrag);
+header1.addEventListener("mouseup", () => {
+    header1.removeEventListener("mousemove", onDrag);
 });
 
-header.addEventListener("mouseleave", () => {
-    header.removeEventListener("mousemove", onDrag);
+header1.addEventListener("mouseleave", () => {
+    header1.removeEventListener("mousemove", onDrag);
+});
+
+
+
+const wrapper2 = document.querySelector(".wrapper2");
+header2 = wrapper2.querySelector("header");
+
+function onDrag({movementX, movementY})
+{
+    let getStyle = window.getComputedStyle(wrapper2);
+
+    let left = parseInt(getStyle.left); 
+    let top = parseInt(getStyle.top);
+
+    wrapper2.style.left = `${left + movementX}px` 
+    wrapper2.style.top = `${top + movementY}px`
+}
+
+header2.addEventListener("mousedown", () => {
+    header2.addEventListener("mousemove", onDrag);
+});
+
+header2.addEventListener("mouseup", () => {
+    header2.removeEventListener("mousemove", onDrag);
+});
+
+header2.addEventListener("mouseleave", () => {
+    header2.removeEventListener("mousemove", onDrag);
 });

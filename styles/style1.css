@@ -137,7 +137,8 @@ a:visited { color: rgba(255, 255, 255, 0.623); }
     box-shadow: none;
 }
 
-.wrapper{
+
+.wrapper1{
     background: #f3deb1;
     width: 525px;
     position: absolute;
@@ -148,7 +149,7 @@ a:visited { color: rgba(255, 255, 255, 0.623); }
     box-shadow: 2px 2px 3px;
 
 }
-.wrapper header{
+.wrapper1 header{
     background-image: url(images/headerscroll.png);
     background-size:700px;
     background-repeat: no-repeat;
@@ -166,7 +167,7 @@ a:visited { color: rgba(255, 255, 255, 0.623); }
 
     user-select: none;
 }
-.wrapper footer{
+.wrapper1 footer{
     background-image: url(images/headerscroll.png);
     background-size:700px;
     background-repeat: no-repeat;
@@ -179,9 +180,56 @@ a:visited { color: rgba(255, 255, 255, 0.623); }
     font-family: MedievalTextFont;
     font-size: 25px;
 }
-.wrapper .content{
+.wrapper1 .content{
     margin: 20px 20px 20px
 }
+
+.wrapper2{
+    background: #f3deb1;
+    width: 525px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 3px;
+
+}
+.wrapper2 header{
+    background-image: url(images/headerscroll.png);
+    background-size:700px;
+    background-repeat: no-repeat;
+
+    margin-right: -87px;
+    margin-left: -87px;
+    margin-top: -7px;
+    padding: 15px;
+    
+    font-family: MedievalTextFont;
+    font-size: 25px;
+    
+    display: flex;
+    align-items: center;
+
+    user-select: none;
+}
+.wrapper2 footer{
+    background-image: url(images/headerscroll.png);
+    background-size:700px;
+    background-repeat: no-repeat;
+
+    margin-right: -87px;
+    margin-left: -87px;
+    margin-bottom: -7px;
+    padding: 32px;
+    
+    font-family: MedievalTextFont;
+    font-size: 25px;
+}
+.wrapper2 .content{
+    margin: 20px 20px 20px
+}
+
 .content .title{
     font-size: 23px;
 }
