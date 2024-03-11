@@ -127,7 +127,16 @@ a:visited { color: rgba(255, 255, 255, 0.623); }
     src: url('fonts/The_Centurion.otf'); 
 } 
 
-.close-button{
+.close-button1{
+    background: none;
+    color:rgb(218, 53, 53);
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
+    box-shadow: none;
+}
+.close-button2{
     background: none;
     color:rgb(218, 53, 53);
     font-size: 10px;
@@ -232,4 +241,30 @@ a:visited { color: rgba(255, 255, 255, 0.623); }
 
 .content .title{
     font-size: 23px;
+}
+
+
+.apps{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.445);
+    right: 0;
+
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.app{
+    margin: 25px;
+}
+.app img{
+    width: 100px;
+}
+.app p{
+    text-align: center;
+    font-family: MedievalTextFont;
 }
