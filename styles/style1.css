@@ -156,6 +156,7 @@ a:visited { color: rgba(255, 255, 255, 0.623); }
     border-radius: 10px;
     transform: translate(-50%, -50%);
     box-shadow: 2px 2px 3px;
+    
 
 }
 .wrapper1 header{
@@ -246,25 +247,35 @@ a:visited { color: rgba(255, 255, 255, 0.623); }
 
 .apps{
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.445);
     right: 0;
 
     margin-top: 50px;
-
+    
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-
+    
 }
 
 .app{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin: 25px;
+}
+.app:hover{
+    background-color: rgba(255, 255, 255, 0.425);
 }
 .app img{
     width: 100px;
 }
 .app p{
+    text-shadow: 2px 2px 2px black;;
+    color: white;
     text-align: center;
     font-family: MedievalTextFont;
+
+    user-select: none;
 }

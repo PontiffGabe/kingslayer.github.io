@@ -31,8 +31,9 @@ function onDrag1({movementX, movementY})
     let left = parseInt(getStyle.left); 
     let top = parseInt(getStyle.top);
 
-    wrapper1.style.left = `${left + movementX}px` 
-    wrapper1.style.top = `${top + movementY}px`
+    wrapper1.style.left = `${left + movementX}px` ;
+    wrapper1.style.top = `${top + movementY}px` ;
+    wrapper1.style.zIndex = "2";
 }
 
 header1.addEventListener("mousedown", () => {
@@ -41,10 +42,12 @@ header1.addEventListener("mousedown", () => {
 
 header1.addEventListener("mouseup", () => {
     header1.removeEventListener("mousemove", onDrag1);
+    window.getComputedStyle(wrapper1).style.zIndex = "1";
 });
 
 header1.addEventListener("mouseleave", () => {
     header1.removeEventListener("mousemove", onDrag1);
+    window.getComputedStyle(wrapper1).style.zIndex = "1";
 });
 
 
@@ -55,12 +58,13 @@ header2 = wrapper2.querySelector("header");
 function onDrag2({movementX, movementY})
 {
     let getStyle = window.getComputedStyle(wrapper2);
-
+    
     let left = parseInt(getStyle.left); 
     let top = parseInt(getStyle.top);
-
-    wrapper2.style.left = `${left + movementX}px` 
-    wrapper2.style.top = `${top + movementY}px`
+    
+    wrapper2.style.left = `${left + movementX}px` ;
+    wrapper2.style.top = `${top + movementY}px`;
+    wrapper2.style.zIndex = "2";
 }
 
 header2.addEventListener("mousedown", () => {
@@ -69,8 +73,11 @@ header2.addEventListener("mousedown", () => {
 
 header2.addEventListener("mouseup", () => {
     header2.removeEventListener("mousemove", onDrag2);
+    window.getComputedStyle(wrapper2).style.zIndex = "1";
 });
 
 header2.addEventListener("mouseleave", () => {
     header2.removeEventListener("mousemove", onDrag2);
+    window.getComputedStyle(wrapper2).style.zIndex = "1";
 });
+
