@@ -24,7 +24,7 @@ hiddenElements.forEach((elt) => observer.observe(elt));
 const wrapper1 = document.querySelector(".wrapper1");
 header1 = wrapper1.querySelector("header");
 
-function onDrag({movementX, movementY})
+function onDrag1({movementX, movementY})
 {
     let getStyle = window.getComputedStyle(wrapper1);
 
@@ -36,15 +36,15 @@ function onDrag({movementX, movementY})
 }
 
 header1.addEventListener("mousedown", () => {
-    header1.addEventListener("mousemove", onDrag);
+    header1.addEventListener("mousemove", onDrag1);
 });
 
 header1.addEventListener("mouseup", () => {
-    header1.removeEventListener("mousemove", onDrag);
+    header1.removeEventListener("mousemove", onDrag1);
 });
 
 header1.addEventListener("mouseleave", () => {
-    header1.removeEventListener("mousemove", onDrag);
+    header1.removeEventListener("mousemove", onDrag1);
 });
 
 
@@ -52,7 +52,7 @@ header1.addEventListener("mouseleave", () => {
 const wrapper2 = document.querySelector(".wrapper2");
 header2 = wrapper2.querySelector("header");
 
-function onDrag({movementX, movementY})
+function onDrag2({movementX, movementY})
 {
     let getStyle = window.getComputedStyle(wrapper2);
 
@@ -64,13 +64,13 @@ function onDrag({movementX, movementY})
 }
 
 header2.addEventListener("mousedown", () => {
-    header2.addEventListener("mousemove", onDrag);
+    header2.addEventListener("mousemove", onDrag2);
 });
 
 header2.addEventListener("mouseup", () => {
-    header2.removeEventListener("mousemove", onDrag);
+    header2.removeEventListener("mousemove", onDrag2);
 });
 
 header2.addEventListener("mouseleave", () => {
-    header2.removeEventListener("mousemove", onDrag);
+    header2.removeEventListener("mousemove", onDrag2);
 });
