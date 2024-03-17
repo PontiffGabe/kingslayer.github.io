@@ -1,5 +1,13 @@
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
+@font-face {
+    font-family: MedievalTextFont;
+    src: url('fonts/Olondon_.otf'); 
+} 
+@font-face {
+    font-family: MedievalTitleFont;
+    src: url('fonts/The_Centurion.otf'); 
+} 
 :root{
     --white-1: #EDEDED;
     --margin-1: 5px;
@@ -11,7 +19,9 @@
     box-sizing: border-box;
 }
 body {
-    background: rgb(71, 97, 79);
+    background: url("images/pc_background.jpg");
+    background-size: 800px;
+    background-repeat: repeat;
 }
 main{
     display: flex;
@@ -21,6 +31,46 @@ main{
     width: 100vw;
     height: 100vh;
 }
+
+.info-bar{
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    outline: solid 2px black;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    user-select: none;
+}
+
+.close-btn{
+    background-color: red;
+    font-size: 20px;
+
+    position: absolute; 
+    top: 0;
+    right: 0; 
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 10px;
+}
+.close-btn:hover{
+    background-color: red;
+}
+
 .container1{
     min-width: fit-content;
     min-height: fit-content; 
@@ -38,8 +88,65 @@ main{
     background-color: rgb(255, 255, 255);
 
     font-size: small;
+
+    transform: scale(0);
     
 }
+.container1.active{
+    transform: scale(1);
+    
+}
+.container2{
+    min-width: fit-content;
+    min-height: fit-content; 
+
+    width: 100px;
+
+    position: relative;
+
+
+    position: absolute;
+    margin: var(--margin-1);
+    padding: var(--margin-1);
+
+    outline: var(--margin-1) solid black;
+    background-color: rgb(255, 255, 255);
+
+    font-size: small;
+
+    transform: scale(0);
+    
+}
+.container2.active{
+    transform: scale(1);
+    
+}
+.container3{
+    min-width: fit-content;
+    min-height: fit-content; 
+
+    width: 100px;
+
+    position: relative;
+
+
+    position: absolute;
+    margin: var(--margin-1);
+    padding: var(--margin-1);
+
+    outline: var(--margin-1) solid black;
+    background-color: rgb(255, 255, 255);
+
+    font-size: small;
+
+    transform: scale(0);
+    
+}
+.container3.active{
+    transform: scale(1);
+    
+}
+
 
 .img-container{
     display: flex;
@@ -79,24 +186,6 @@ main{
 
 
 
-.info-bar{
-    position: absolute;
-    background-color: white;
-    border-radius: 10px;
-    outline: solid 2px black;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    
-    padding-right: 10px;
-    padding-left: 10px;
-    margin: 10px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
 
 
 
@@ -113,6 +202,10 @@ main{
 }
 .app{
     background: none;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     padding-top: 10px;
     padding-bottom: 10px;
@@ -135,8 +228,9 @@ main{
     background-color: rgba(255, 255, 255, 0.671);
 }
 .app p{
+    overflow: hidden;
     margin-top: 2px;
-    font-size: 10px;
+    font-size: 12px;
     text-shadow: 2px 2px 2px black;;
     color: white;
     text-align: center;
@@ -144,3 +238,4 @@ main{
 
     user-select: none;
 }
+
