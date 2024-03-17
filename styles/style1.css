@@ -21,7 +21,7 @@ main{
     width: 100vw;
     height: 100vh;
 }
-.container{
+.container1{
     min-width: fit-content;
     min-height: fit-content; 
 
@@ -75,4 +75,72 @@ main{
     padding: 0 40%;
     display: flex; /* Utilisation de Flexbox */
     justify-content: space-evenly; 
+}
+
+
+
+.info-bar{
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    outline: solid 2px black;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+.apps{
+    position: absolute;
+    right: 0;
+    top: 150px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+.app{
+    background: none;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 25px;
+
+    border-radius: 10px;
+    transition: 0.1s ease-out;
+}
+.app img{
+    width: 64px;
+    user-select: none;
+    pointer-events: none; 
+}
+.app:hover{
+    background-color: rgba(255, 255, 255, 0.425);
+}
+.app:active{
+    background-color: rgba(255, 255, 255, 0.671);
+}
+.app p{
+    margin-top: 2px;
+    font-size: 10px;
+    text-shadow: 2px 2px 2px black;;
+    color: white;
+    text-align: center;
+    font-family: MedievalTextFont;
+
+    user-select: none;
 }
