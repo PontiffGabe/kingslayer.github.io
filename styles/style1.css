@@ -18,7 +18,7 @@
 
 html{
     scrollbar-width: normal;
-    scrollbar-color: red green;
+    scrollbar-color: rgb(189, 189, 189) rgb(75, 75, 75);
 }
 html::-webkit-scrollbar{
     width: 10px;
