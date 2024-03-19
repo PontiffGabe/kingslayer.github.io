@@ -55,6 +55,8 @@ main{
     min-width: fit-content;
     justify-content: center;
     align-items: center;
+    
+    user-select: none;
 }
 .icon{
     display: flex;
@@ -69,6 +71,9 @@ main{
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     border: 2px solid #EDEDED;
+}
+.icon:active{
+    background-color: rgba(157, 173, 175, 0.37);
 }
 #main-section{
 
