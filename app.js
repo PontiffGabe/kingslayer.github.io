@@ -10,18 +10,17 @@ const closeDownloadButton = document.getElementById("btn-close-download");
 
 function openModal(modal){
   if (modal == null) return
-  modal.className += " show";
-}
+  modal.classList.add("show")
+};
 function closeModal(modal){
   if (modal == null) return
   modal.classList.remove("show")
-}
+};
 
 
 openAboutUsButton.addEventListener("click", () => {
   const window = document.getElementById("wrapper-about_us")
   openModal(window);
-
 });
 closeAboutUsButton.addEventListener("click", () => {
   const window = document.getElementById("wrapper-about_us")
