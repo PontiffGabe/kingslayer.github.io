@@ -10,7 +10,7 @@ const closeDownloadButton = document.getElementById("btn-close-download");
 
 function openModal(modal){
   if (modal == null) return
-  modal.classList.add("show")
+  modal.className += " show";
 }
 function closeModal(modal){
   if (modal == null) return
@@ -21,26 +21,27 @@ function closeModal(modal){
 openAboutUsButton.addEventListener("click", () => {
   const window = document.getElementById("wrapper-about_us")
   openModal(window);
+
 });
 closeAboutUsButton.addEventListener("click", () => {
   const window = document.getElementById("wrapper-about_us")
   closeModal(window);
 });
 
-openAboutUsButton.addEventListener("click", () => {
+openChronologyButton.addEventListener("click", () => {
   const window = document.getElementById("wrapper-chronology")
   openModal(window);
 });
-closeAboutUsButton.addEventListener("click", () => {
+closeChronologyButton.addEventListener("click", () => {
   const window = document.getElementById("wrapper-chronology")
   closeModal(window);
 });
 
-openAboutUsButton.addEventListener("click", () => {
+openDownloadButton.addEventListener("click", () => {
   const window = document.getElementById("wrapper-download")
   openModal(window);
 });
-closeAboutUsButton.addEventListener("click", () => {
+closeDownloadButton.addEventListener("click", () => {
   const window = document.getElementById("wrapper-download")
   closeModal(window);
 });
