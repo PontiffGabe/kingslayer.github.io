@@ -16,6 +16,20 @@
                  1px  1px 0 black; /* Ombre du texte pour créer un contour noir */
 }
 
+html{
+    scrollbar-width: normal;
+    scrollbar-color: red green;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: rgb(87, 87, 87);
+}
+html::-webkit-scrollbar-track{
+    background-color: rgb(187, 187, 187);
+}
+
 body{
     background-color: white;
 }
@@ -103,7 +117,7 @@ main{
 
     outline: 2px solid black;
 
-    box-shadow:  5px 5px 2px rgba(0, 0, 0, 1);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 1);
 }
 
 .wrapper-about_us header{
@@ -118,6 +132,8 @@ main{
 }
 
 .wrapper-about_us .content{
+    overflow-y: auto;
+    max-height: 300px;
     padding: 20px;
 
 }
