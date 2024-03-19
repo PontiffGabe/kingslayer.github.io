@@ -9,6 +9,15 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    color: white;
+    text-shadow: -1px -1px 0 black,  
+                 1px -1px 0 black,
+                -1px  1px 0 black,
+                 1px  1px 0 black; /* Ombre du texte pour créer un contour noir */
+}
+
+body{
+    background-color: white;
 }
 
 main{
@@ -16,38 +25,61 @@ main{
 }
 
 .grid-container {
+    padding: 0;
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    grid-template-rows:  50px 1fr  50px;
+    grid-template-columns: 40px 1fr 40px;
+    grid-template-rows:  40px 1fr  40px;
     width: 100%; /* Largeur de la grille */
     height: 100%;
-    margin: 0 auto; /* Centrer la grille */
+    margin: 0 0; /* Centrer la grille */
 }
 
 /* Style des éléments de la grille */
 .grid-item {
-    background-color: #f0f0f0; /* Couleur de fond */
+    background-color: #ffffff; /* Couleur de fond */
     padding: 20px; /* Espacement interne */
     text-align: center; /* Alignement du texte au centre */
 }
 
 #main-section{
     display: grid;
-    grid-template-rows: 2fr 2fr 1fr;
-    grid-template-columns: 1fr 1fr 5%;
+    grid-template-columns: 3fr 0.5fr;
     width: 100%;
     height: 100%;
 }
 
-.grid-icon{
+.icons{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     border: #fff;
-    
+    min-width: fit-content;
+    justify-content: center;
+    align-items: center;
 }
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: 0.1s;
+}
+.icon:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    border: 2px solid #EDEDED;
+}
+#main-section{
 
-.grid-icon-1{
-    grid-column: 3 / 4;
-    grid-row: 1 / 4;
-    outline: 1px solid black;
+    border: 2px solid black;
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/bgh-img.jpg");
+    background-size: cover;
+    background-color: #f0f0f0;
+    z-index: 2;
+    box-shadow:  8px 8px 2px rgba(0, 0, 0, 1);
 }
 
 .nav-bar{
