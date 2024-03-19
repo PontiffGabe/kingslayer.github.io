@@ -1,4 +1,4 @@
-// ------------- DRAGGABLE DIV --------------
+// ------------- OPEN CLOSE DIV --------------
 const openAboutUsButton = document.getElementById("btn-about_us");
 const closeAboutUsButton = document.getElementById("btn-close-about_us");
 
@@ -47,3 +47,33 @@ closeDownloadButton.addEventListener("click", () => {
 
 
 // ----------------------------------
+
+// ------------- DRAGGABLE DIV --------------
+const about_us_wrapper = document.getElementById(".wrapper-about_us");
+about_us_header = about_us_wrapper.querySelector("header");
+
+function onDrag1({movementX, movementY})
+{
+    let getStyle = window.getComputedStyle(about_us_wrapper);
+
+    let left = parseInt(getStyle.left); 
+    let top = parseInt(getStyle.top);
+
+    about_us_wrapper.style.left = `${left + movementX}px` ;
+    about_us_wrapper.style.top = `${top + movementY}px` ;
+}
+
+about_us_header.addEventListener("mousedown", () => {
+  about_us_header.addEventListener("mousemove", onDrag1);
+  about_us_wrapper.style.zIndex = "2";
+});
+
+about_us_header.addEventListener("mouseup", () => {
+  about_us_header.removeEventListener("mousemove", onDrag1);
+  about_us_wrapper.style.zIndex = "1";
+});
+
+about_us_header.addEventListener("mouseleave", () => {
+  about_us_header.removeEventListener("mousemove", onDrag1);
+  about_us_wrapper.style.zIndex = "1";
+});
