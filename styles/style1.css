@@ -22,7 +22,6 @@
 
 body{
     background-color: white;
-    background-image: url("./images/bg-dotted.img.jpg");
     background-size: cover;
 }
 
@@ -55,6 +54,48 @@ main{
     height: 100%;
 }
 
+.grid-left{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.folder-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.folder-container img, .folder-container p{
+    transition: 0.1s;
+    cursor: pointer;
+    padding: 10px;
+}
+.folder-container img:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+        outline: 2px solid #EDEDED;
+}
+
+
+
+#gabriel-folder{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+#rania-folder{
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+#nicolas-folder{
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
 .icons{
     display: grid;
     grid-column: 2/3;
@@ -152,3 +193,103 @@ main{
     align-items: center;
 }
 
+.download-btn{
+    background-color: rgb(184, 184, 184);
+    outline: solid black 2px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    transition: 0.15s;
+}
+.download-btn:hover{
+    box-shadow: 3px 3px 5px black;
+}
+.download-btn:active{
+    box-shadow: 5px 5px 7px black;
+}
+.download-image{
+    border-right: 2px solid black;
+    width: 40px;
+    padding: 10px;
+}
+.download-btn p{
+    margin: 10px;
+    font-size: 10px;
+}
+.download-btn p{
+    font-family: DOS_Font1;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+}
+
+
+
+
+.exit-btn{
+    background-color: rgb(194, 193, 193);
+    
+    padding-left:7px;
+    padding-right:7px;
+    
+    outline: 2px solid rgb(255, 255, 255);
+}
+.exit-btn:hover{
+    background-color: rgb(161, 161, 161);
+}
+.exit-btn:active{
+    background-color: rgb(194, 193, 193);
+}
+
+
+.wrapper{
+    position: absolute;
+    background-color: rgb(224, 224, 224);
+    outline: 2px solid black;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 1);
+    
+    min-width: 600px;
+    max-width: 900px;
+    min-height: 300px;
+    max-height: 800px;
+
+    transform: translate(50%, 50%) scale(0);
+
+    user-select: none;
+}
+.wrapper.show{
+    transform: translate(50%, 50%) scale(1);
+}
+.wrapper header{
+    background-color: rgb(184, 184, 184);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    border-bottom: 2px solid black;
+}
+.wrapper header p{
+    font-family: DOS_Font1; font-size: 20px;
+}
+.wrapper .content{
+    text-align: justify;
+
+    min-height: 100px;
+    max-height: 500px;
+
+    padding: 0px;
+    padding: 20px;
+
+    overflow-y: auto;
+    
+}
+.photo{
+    width: 100px;
+    outline: rgb(223, 221, 221) solid 2px;
+    box-shadow: 2px 2px 4px black;
+}
