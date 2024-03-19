@@ -4,6 +4,10 @@
     --white-1: #EDEDED;
     --margin-1: 5px;
 }
+@font-face {
+    font-family: DOS_Font1;
+    src: url("fonts/Good\ Old\ DOS.ttf");
+}
 *{
     margin: 0;
     padding: 0;
@@ -135,7 +139,7 @@ main{
 }
 
 .nav-text{
-    
+
     width: 85%;
     height: 100%;
     background-color: white;
@@ -147,3 +151,4 @@ main{
     justify-content: center;
     align-items: center;
 }
+
