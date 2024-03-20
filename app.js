@@ -133,3 +133,60 @@ download_header.addEventListener("mouseup", () => {
 download_header.addEventListener("mouseleave", () => {
   download_header.removeEventListener("mousemove", onDrag3);
 });
+
+
+//------------------------------------------------------------------
+
+
+const jimmy_wrapper = document.getElementById("jimmy-wrapper");
+jimmy_wrapper = jimmy_wrapper.querySelector("header");
+jimmy_wrapper.addEventListener("click", () => {
+  const window = document.getElementById("wrapper-download")
+  openModal(window);
+});
+function onDrag1({movementX, movementY})
+{
+    let getStyle = window.getComputedStyle(about_us_wrapper);
+
+    let left = parseInt(getStyle.left); 
+    let top = parseInt(getStyle.top);
+
+    about_us_wrapper.style.left = `${left + movementX}px` ;
+    about_us_wrapper.style.top = `${top + movementY}px` ;
+}
+
+jimmy_wrapper.addEventListener("mousedown", () => {
+  jimmy_wrapper.addEventListener("mousemove", onDrag1);
+  about_us_wrapper.style.zIndex = "2";
+  chronology_wrapper.style.zIndex = "1";
+  download_wrapper.style.zIndex = "1";
+});
+
+jimmy_wrapper.addEventListener("mouseup", () => {
+  jimmy_wrapper.removeEventListener("mousemove", onDrag1);
+});
+
+jimmy_wrapper.addEventListener("mouseleave", () => {
+  jimmy_wrapper.removeEventListener("mousemove", onDrag1);
+});
+
+const openJimmyFile = document.getElementById("jimmy-img");
+const closeJimmyFile = document.getElementById("btn-close-jimmy_file");
+
+function openModal(modal){
+  if (modal == null) return
+  modal.classList.add("show")
+};
+function closeModal(modal){
+  if (modal == null) return
+  modal.classList.remove("show")
+};
+
+openJimmyFile.addEventListener("click", () => {
+  const window = document.getElementById("wrapper-about_us")
+  openModal(window);
+});
+closeJimmyFile.addEventListener("click", () => {
+  const window = document.getElementById("wrapper-about_us")
+  closeModal(window);
+});
