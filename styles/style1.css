@@ -1,12 +1,12 @@
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
+@font-face {
+    font-family: DOS_Font1;
+    src: url("fonts/Good_Old_DOS.ttf");
+}
 :root{
     --white-1: #EDEDED;
     --margin-1: 5px;
-}
-@font-face {
-    font-family: DOS_Font1;
-    src: url("fonts/Good\ Old\ DOS.ttf");
 }
 *{
     margin: 0;
@@ -86,16 +86,15 @@ main{
     grid-row: 2 / 3;
     grid-column: 1 / 2;
 }
-
 #rania-folder{
     grid-row: 3 / 4;
     grid-column: 1 / 2;
 }
-
 #nicolas-folder{
     grid-row: 4 / 5;
     grid-column: 1 / 2;
 }
+
 .icons{
     display: grid;
     grid-column: 2/3;
@@ -215,13 +214,11 @@ main{
     padding: 10px;
 }
 .download-btn p{
-    margin: 10px;
-    font-size: 10px;
-}
-.download-btn p{
     font-family: DOS_Font1;
-    letter-spacing: 0.5px;
+    margin: 10px;
     font-size: 12px;
+    letter-spacing: 0.5px;
+    box-shadow: none;
 }
 
 
@@ -351,21 +348,21 @@ main{
     
 }
 .point.left-side{
-    right: -10%;
+    right: -8%;
 }
-
 .point.right-side{
-    left: -8%;
+    left: -7%;
 }
 
 
 
 .chr-image{
+    width: 125px;
     outline: 3px solid black;
 }
 .chr-title{
     font-family: DOS_Font1;
-    font-size: 21px;
+    font-size: 18px;
 }
 .chr-date{
     color: #e5e5e5;
