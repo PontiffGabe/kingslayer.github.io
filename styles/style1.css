@@ -123,6 +123,9 @@ main{
     border-radius: 5px;
     border: 2px solid #EDEDED;
 }
+.icon:active{
+    background-color: rgba(255, 255, 255, 0.641);
+}
 #main-section{
     position: relative;
     border: 2px solid black;
@@ -180,7 +183,6 @@ main{
 }
 
 .nav-text{
-
     width: 85%;
     height: 100%;
     background-color: white;
@@ -248,7 +250,7 @@ main{
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 1);
     
     min-width: 600px;
-    max-width: 900px;
+    max-width: 1200px;
     min-height: 300px;
     max-height: 800px;
 
@@ -292,4 +294,100 @@ main{
     width: 100px;
     outline: rgb(223, 221, 221) solid 2px;
     box-shadow: 2px 2px 4px black;
+}
+
+
+
+.chronology-container{
+    position: relative;
+    max-width: 1200px;
+    margin: 30px;
+
+}
+.middle-line{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: black;
+    width: 5px;
+    height: 100%;
+
+}
+.chronology-space{
+    background-color: rgba(68, 68, 68, 0.034);
+    padding-top: 60px;
+}
+.chronology-box{
+    background-color: rgb(199, 199, 199);
+
+    outline: black 2px solid;
+
+    padding: 10px 50px;
+    width: 50%;
+    position: relative;
+    
+    min-height: 125px;
+    box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 1);
+}
+.chronology-box.left-side{
+    margin-left: -35px;
+    left:0;
+}
+.chronology-box.right-side{
+    margin-left: 35px;
+    left: 50%;
+}
+.point{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+
+    width: 100px;
+    height: 3px;
+
+    top: 50%;
+    right: -10%;
+
+    z-index: -1;
+    
+}
+.point.left-side{
+    right: -10%;
+}
+
+.point.right-side{
+    left: -8%;
+}
+
+
+
+.chr-image{
+    outline: 3px solid black;
+}
+.chr-title{
+    font-family: DOS_Font1;
+    font-size: 21px;
+}
+.chr-date{
+    color: #e5e5e5;
+    font-size: 14px;
+    font-style: italic;
+    border-bottom: black 1px solid;
+
+    text-shadow: 0.5px black;
+    
+}
+.chr-date.left-side{
+    text-align: end;
+}
+.chr-date.right-side{
+    text-align: start;
+}
+.chr-text{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+
+    color:black;
+    font-size: 11px;
+    text-shadow: none;
+
 }
