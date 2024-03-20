@@ -2,23 +2,357 @@
 <html lang="fr">
 <head>
     <link rel="stylesheet" href="styles/style1.css">
-    <title>Helios Studios</title>
-    <script defer src="JS_stuff/scroll_handler.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+  <title>Main-page</title>
 </head>
 
 <body>
-    <div class="topwall">
-        <a class="topbutton" href="Téléchargement.html">Téléchargement</a>
-        <a class="topbutton" href="chronologie.html">Chronologie</a>
-        <a class="topbutton" href="A_propos.html">À propos</a>
-    </div>
+   <main style="overflow:hidden;">
+        <div class="grid-container">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item " id="main-section">
+                <div class="grid-left">
+                    <div class="jimmy_folder folder-container" id="jimmy-folder">
+                        <img src="./styles/images/folder.png" height="84px" width="84px" alt="" class="jimmy-img">
+                        <p>Jimmy</p>
 
-    
+                        <div class="wrapper" id="jimmy-wrapper">
+                            <header>
+                                <p>/jimmy/</p>
+                                <button class="exit-btn" id="btn-close-jimmy_file">&times</button>
+                            </header>
 
+                            <div class="content">
+                                <p style="font-family: DOS_Font1;">A propos de Jimmy</p>
+
+                                <p style="border-bottom: 2px solid black; font-size: 15px; color:black; text-shadow: none;">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, recusandae odit. Dolorum, magni ut dolor dolore perferendis totam voluptas molestias, rerum pariatur accusamus, fuga doloremque quam debitis soluta maxime maiores.
+                                </p>
+
+                                <br/>
+                                <img class="photo" src="img/jubairphoto.png" style="float: left;"/>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">&nbsp Nom: Jubair L.</p>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">&nbsp Rôle: Chef d'équipe</p>
+                                
+                                <br/>
+                                <p style="font-family: DOS_Font1;">Description: </p>
+                                <p style="border-bottom: 2px solid black; font-size: 15px; color:black; text-shadow: none;">
+                                    Délégué sur l'IA en général, il est passionné par l'informatique.
+                                    Il a déjà travaillé sur plusieurs projets, notamment dans le domaine des jeux vidéo.
+                                    En dehors de ses ́etudes et de ses projets, il consacre volontiers son temps libre à l'expansion de ses connaissances dans divers domaines
+                                    <br/>
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gabriel folder-container" id="gabriel-folder">
+                        <img src="./styles/images/folder.png" height="84px" width="84px" alt="">
+                        <p>Gabriel</p>
+                    </div>
+                    <div class="rania_folder folder-container" id="rania-folder">
+                        <img src="./styles/images/folder.png" height="84px" width="84px" alt="">
+                        <p>Rania</p>
+                    </div>
+                    <div class="nicolas_folder folder-container" id="nicolas-folder">
+                        <img src="./styles/images/folder.png" height="84px" width="84px" alt="">
+                        <p>Nicolas</p>
+                    </div>
+                    <div class="jubair_folder folder-container" id="jubair-folder">
+                        <img src="./styles/images/folder.png" height="84px" width="84px" alt="">
+                        <p>Jubair</p>
+                    </div>
+                </div>
+
+                <div class="grid-nav">
+
+                    <div class="nav-text">
+                        <p  style="text-align: left; margin-left: 30px; color: rgb(255, 255, 255);">Bienvenue sur notre site !</p>
+                    </div>
+
+                    <div class="tbs-icons">
+                        <i class="fa-solid fa-square-xmark" id="cross-btn"></i>
+                        <i class="fa-regular fa-square" id="square-btn"></i>
+                        <i class="fa-regular fa-square-minus" id="minus-btn"></i>
+                    </div>
+                    
+                </div>
+                <div class="grid-main">
+                    <div class="wrapper" id="wrapper-about_us">
+                        <header>
+                            <p>/about_us/</p>
+                            <button class="exit-btn" id="btn-close-about_us">&times</button>
+                        </header>
+
+                            <div class="content">
+
+                                <p style="font-family: DOS_Font1;">Hélios Studios</p>
+                        
+                                <p style="border-bottom: 2px solid black; font-size: 15px; color:black; text-shadow: none;">
+                                    Nous sommes une entreprise start-up dynamique dans le monde de la création de jeux vidéo. 
+                                    <br/>Forts d'une équipe de cinq passionnés, nous nous consacrons à la conception et au développement de jeux innovants et captivants. 
+                                    Chez Hélios Studios, nous croyons en la puissance des jeux vidéo pour divertir, inspirer et rassembler les joueurs du monde entier. 
+                                    Notre équipe travaille avec dévouement et créativité pour offrir des expériences de jeu uniques et mémorables. 
+                                    Explorez notre site pour découvrir nos projets actuels, notre vision pour l'avenir et comment vous pouvez vous impliquer dans cette aventure passionnante. 
+                                    Rejoignez-nous alors que nous repoussons les frontières de l'imagination et de l'innovation dans l'univers des jeux vidéo avec Hélios Studios.
+                                    <br/>
+                                    <br/>
+                                </p>
+       
+
+
+                                <br/>
+                                <img class="photo" src="img/jubairphoto.png" style="float: left;"/>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">&nbsp Nom: Jubair L.</p>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">&nbsp Rôle: Chef d'équipe</p>
+                                
+                                <br/>
+                                <p style="font-family: DOS_Font1;">Description: </p>
+                                <p style="border-bottom: 2px solid black; font-size: 15px; color:black; text-shadow: none;">
+                                    Délégué sur l'IA en général, il est passionné par l'informatique.
+                                    Il a déjà travaillé sur plusieurs projets, notamment dans le domaine des jeux vidéo.
+                                    En dehors de ses ́etudes et de ses projets, il consacre volontiers son temps libre à l'expansion de ses connaissances dans divers domaines
+                                    <br/>
+                                    <br/>
+                                </p>
+                                
+
+
+                                <br/>
+                                <img class="photo" src="img/jimmyphoto.png" style="float: left;"/>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">&nbsp Nom: Jimmy N.</p>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">&nbsp Rôle: Design</p>
+                                
+                                <br/>
+                                <p style="font-family: DOS_Font1;">Description: </p>
+                                <p style="border-bottom: 2px solid black; font-size: 15px; color:black; text-shadow: none;">
+                                    Jimmy, chargé de la direction artistique du jeu et de tout l'aspect graphique d'Hélios Studios que ce soit du site web en passant par la télécommunication.
+                                    <br/>
+                                    <br/>
+                                </p>
+                                
+
+
+                                <br/>
+                                <img class="photo" src="img/gabrielphoto.png" style="float: left;"/>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">&nbsp Nom: Gabriel T.</p>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">&nbsp Rôle: Programmation & Multijoueur</p>
+                                
+                                <br/>
+                                <p style="font-family: DOS_Font1;">Description: </p>
+                                <p style="border-bottom: 2px solid black; font-size: 15px; color:black; text-shadow: none;">
+                                    Délégué en programmation & multijoueur, c'est un passionné de jeux vidéos.
+                                    Il souhaite maintenant créer lui-même ses jeux-vidéos avec sa vision et n'arrête jamais d'apprendre.
+                                    <br/>
+                                    <br/>
+                                </p>
+                                
+
+
+                                <br/>
+                                <img class="photo" src="img/raniaphoto.png" style="float: left;"/>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">&nbsp Nom: Rania B.</p>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">&nbsp Rôle: Menu/Interface</p>
+                                
+                                <br/>
+                                <p style="font-family: DOS_Font1;">Description: </p>
+                                <p style="border-bottom: 2px solid black; font-size: 15px; color:black; text-shadow: none;">
+                                    Délégué sur ce qui est de l'interface en général, elle a toujours été passionnée par les jeux vidéos.
+                                    Dès son plus jeune âge, elle s'est intéressée à cet univers et a toujours rêvé de créer ses propres jeux.
+                                    Elle a canalisé cette passion grâce à son imagination débordante, sa fascination pour la lecture et l'écriture, ainsi qu'en s'inspirant fréquemment de la mythologie grecque.
+                                    <br/>
+                                    <br/>
+                                </p>
+                                
+
+
+                                <br/>
+                                <img class="photo" src="img/nicolasphoto.png" style="float: left;"/>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">&nbsp Nom: Nicolas B.</p>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">&nbsp Rôle: Game Design</p>
+                                
+                                <br/>
+                                <p style="font-family: DOS_Font1;">Description: </p>
+                                <p style="border-bottom: 2px solid black; font-size: 15px; color:black; text-shadow: none;">
+                                    Délégué sur l'UX et Game Design, c'est sa passion pour les jeux vidéos qui l'a poussé à entreprendre des études dans le domaine de l'informatique et qui lui a permis de viser et d'atteindre des objectifs à première vue inatteignable.
+                                    <br/>
+                                    <br/>
+                                </p>
+
+                            </div>
+                        </header>
+                    </div>
+
+                    <div class="wrapper" id="wrapper-chronology">
+                        <header>
+                            <p>/chronology/</p>
+                            <button class="exit-btn" id="btn-close-chronology">&times</button>
+                        </header>
+                        <div class="content">
+
+                            <div style="width: 900px;" class="chronology-container">
+                                
+                                <div class="middle-line"></div>
+                                <div class="chronology-space">
+
+                                    <div class="chronology-box left-side">
+                                        <div class="point left-side"></div>
+                                        <img class="chr-image" src="styles/Chronology_images/HeliosStudioLogo.png"></img>
+                                        <p class="chr-title">La naissance d'Hélios Studios</p>
+                                        <p class="chr-date left-side">Mi-Novembre</p>
+                                        <p class="chr-text">Tout a commencé avec les idées visuelles brillantes de Jimmy, notre designer.
+                                            Ces idées ont servi de base pour développer les différentes parties du projet.
+                                            Un moment crucial a été la mise en place de la fonction multijoueur, dirigée par Gabriel.
+                                            Ce travail a renforcé notre infrastructure technique et a favorisé une collaboration harmonieuse entre tous les membres de l'équipe. 
+
+                                            Pendant ce temps, Gabriel et Rania se concentrait sur la création du lobby, travaillant étroitement avec notre designer et le responsable du multijoueur.
+                                            Leur objectif était d'intégrer les serveurs de manière transparente et de garantir une expérience fluide tout en mettant l'accent sur le design.
+                                            Bien qu'il reste quelques détails techniques à peaufiner, cette partie essentielle est sur le point d'être finalisée.
+                                        </p>
+                                    </div>
+                                    
+                                    
+                                    <div class="chronology-box right-side">
+                                        <div class="point right-side"></div>
+                                        <img class="chr-image" src="styles/Chronology_images/lobbydisplay.png"></img>
+                                        <p class="chr-title">Début des développements</p>
+                                        <p class="chr-date right-side">Décembre-Février</p>
+                                        <p class="chr-text">
+                                            Nicolas, de son côté, s'est investi dans la conception de l'interface utilisateur, en particulier sur l'inventaire du joueur et son interface graphique.
+                                            Sa collaboration étroite avec notre designer a assuré une expérience utilisateur cohérente et facile à prendre en main.
+                                            Alors que la partie technique est presque terminée, quelques ajustements mineurs sont encore nécessaires pour parfaire le résultat final. 
+
+                                            En parallèle, Jubair a accompli des avancées significatives dans l'implémentation des mécanismes de déplacement des joueurs et dans l'amélioration de leur système de caméra, ainsi que dans la conception des systèmes de détection des IA pour les ennemis et leurs animations.
+                                            Bien que ces progrès soient prometteurs, des étapes cruciales telles que l'intégration des mécanismes d'attaque et l'amélioration des aspects graphiques demeurent à venir. 
+                                        </p>
+                                    </div>
+
+                                    <div class="chronology-box left-side">
+                                        <div class="point left-side"></div>
+                                        
+                                        <img class="chr-image" src="styles/Chronology_images/websitedisplay.png"></img>
+                                        <p class="chr-title">Création de notre site web</p>
+                                        <p class="chr-date left-side">Février-Mars</p>
+                                        <p class="chr-text">
+                                            Enfin, Jimmy et Gabriel ont également développé un site web après avoir terminé la fonction multijoueur.
+                                            Ce site, pensé pour offrir une expérience utilisateur unique, intègre des fonctionnalités nécessaires pour soutenir notre projet.
+                                            Jimmy a apporté son expertise en design pour créer une interface attrayante et facile à utiliser, tandis que Gabriel s'est assuré du bon fonctionnement technique pour une expérience fluide. 
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="chronology-box right-side">
+                                        <div class="point right-side"></div>
+                                        <p class="chr-title">Prochainement...</p>
+                                        <p class="chr-date right-side">Jusqu'à la dernière soutenance</p>
+                                        <p class="chr-text">
+                                            Pour les prochaines étapes du projet, nous prévoyons que Gabriel se chargera des tâches restantes, notamment la conception de la carte et du système de zones.
+                                            Ces éléments viendront compléter notre vision d'un projet abouti et fonctionnel, prêt à être déployé avec succès.
+                                            En résumé, notre avancée méthodique et notre engagement sans faille montrent notre détermination à mener ce projet à bien.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="wrapper" id="wrapper-download">
+                        <header>
+                            <p>/download/</p>
+                            <button class="exit-btn" id="btn-close-download">&times</button>
+                        </header>
+                        <div class="ornaments">
+                            <div class="content">
+
+                                <p style="font-family: DOS_Font1;">Documents:</p>
+                                <br/>
+                                
+                                <a class="download-btn" href="Downloads/Docs/CdCF_King_Slayer.pdf" download>
+                                    <img class="download-image" src="styles/images/download-button.png"></img>
+                                    <p>Cahier des Charges Fonctionnel</p>
+                                </a>
+                                <br/>
+                                <a class="download-btn" href="Downloads/Docs/CdCT_King_Slayer.pdf" download>
+                                    <img class="download-image" src="styles/images/download-button.png"></img>
+                                    <p>Cahier des Charges Technique</p>
+                                </a>
+                                <br/>
+                                <a class="download-btn" href="Downloads/Docs/Soutenance1_King_Slayer.pdf" download>
+                                    <img class="download-image" src="styles/images/download-button.png"></img>
+                                    <p>Rapport de soutenance 1</p>
+                                </a>
+                                
+                                
+                                <br/>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">Jeu:</p>
+                                <br/>
+                                <div class="download-btn">
+                                    <img class="download-image" src="styles/images/download-button.png"></img>
+                                    <p>/!\ - EN CONSTRUCTION - /!\</p>
+                                </div>
+                                
+                                <br/>
+                                <br/>
+                                <p style="font-family: DOS_Font1;">Liens:</p>
+                                <a style="color:rgb(179, 179, 179); font-family: 'Courier New', Courier, monospace; box-shadow: none;" target="_blank" href="https://unity.com/fr">Editeur Unity, documentations, etc...</a>
+                                <br/>
+                                <a target="_blank" href="https://unity.com/fr"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icons">
+                    <div class="icon" id="btn-about_us">
+                        <img src="./styles/images/about_us_icon.png">
+                        <p>about_us.exe</p>
+                    </div>
+                    <div class="icon" id="btn-chronology">
+                        <img src="./styles/images/chronology_icon.png" alt="">
+                        <p>chronology.exe</p>
+                    </div>
+                    <div class="icon" id="btn-download">
+                        <img src="./styles/images/download_icon.png" alt="">
+                        <p>download.exe</p>
+                    </div>
+                    
+                  </div>
+                
+                </div>
+            </div>
+           
+   </main>
 
 </body>
 
 <footer>
 
 </footer>
+
+<script defer src="app.js"></script>
 </html>
